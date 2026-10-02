@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vercel/
+.vite-cache/
+.env
+.env.*
+*.log
+.vercel
+.env*

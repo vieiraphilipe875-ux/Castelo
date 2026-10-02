@@ -1,0 +1,45 @@
+/* Institutional pilot: logo colors, white surfaces; composition remains proposed. */
+:root{--paper:#fff;--ink:#194ea3;--wine:#194ea3;--muted:#435870;--line:#c9d9ee;--sky:#e8f4fc;--brand-cyan:#00b2e0}
+.site-header{height:88px;background:#fff;border-bottom-color:var(--line)}
+.site-header nav{color:#194ea3}.site-header .header-cta{background:#194ea3}
+.reading-progress{background:var(--brand-cyan)}
+.hero{background:#102849}
+.hero-stage{height:100svh;min-height:760px}
+.hero-heading,.js-ready .hero-heading{color:white}
+.hero-heading .serif{font-family:var(--font);font-size:1em;font-weight:650;letter-spacing:-.04em}
+.hero h1{font-size:clamp(40px,min(6.8vw,10.5svh),108px);font-weight:560;line-height:1.02}
+.hero h1 .serif{font-size:1em;line-height:inherit;font-weight:inherit}
+.hero-heading .eyebrow{color:#a7e5f8}
+.hero-shade{background:linear-gradient(90deg,rgba(5,25,56,.86),rgba(5,25,56,.26) 56%,rgba(5,25,56,.05)),linear-gradient(0deg,rgba(5,25,56,.48),transparent 35%)}
+.arrival-plaque{color:white;background:rgba(9,39,79,.72);border-color:rgba(255,255,255,.45)}
+.arrival-plaque p{font-family:var(--font);font-size:28px;font-weight:550;line-height:1.15}
+.plaque-line{background:var(--brand-cyan)}
+.hero-bottom,.photo-note{color:white}
+.hero-threshold{background:#fff;color:#194ea3}
+.hero-threshold .serif{font-family:var(--font);font-weight:650;font-size:1em}
+.essence{background:white;color:#194ea3}
+.house-intro h2,.house-intro h2 .serif{font-family:var(--font);font-weight:580;font-size:clamp(44px,5.4vw,76px)}
+.history-plaque{border-color:#194ea3;background:#e8f4fc}
+.history-plaque strong{font-family:var(--font);font-size:45px;font-weight:600}
+.house-cornice{border-color:#194ea3}.house-cornice>span{background:white}
+.window-triptych article{background:#eef6ff;border-color:#bfd6f1}
+.window-triptych h3{font-family:var(--font);font-weight:550;font-size:31px}
+.window-triptych article:nth-child(2){background:#e6f8fd}
+.window-triptych article:nth-child(3){background:#f5f9ff}
+@media(max-width:600px){
+ .hero-stage{min-height:730px}
+ .hero h1{font-size:clamp(52px,15vw,72px)}
+ .house-intro h2,.house-intro h2 .serif{font-size:clamp(42px,11vw,60px)}
+}
+@media(max-height:650px) and (prefers-reduced-motion:no-preference){
+ .motion-ready .hero-stage{min-height:0}
+ .hero h1{font-size:clamp(40px,min(6vw,10svh),70px);line-height:1.02}
+}
+@media(max-height:480px) and (prefers-reduced-motion:no-preference){
+ .hero h1{font-size:clamp(32px,8svh,42px)}
+ .hero h1 .serif{font-size:1em}
+}
+@media(prefers-reduced-motion:reduce){
+ .hero-stage{height:780px;min-height:0}
+}
+

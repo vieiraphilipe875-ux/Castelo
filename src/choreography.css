@@ -1,0 +1,67 @@
+html.native-scroll-ready{scroll-behavior:auto!important}
+html.choreography-ready .story-section{overflow-x:clip}
+.motion-image-window{position:relative;overflow:hidden;width:100%;isolation:isolate}
+.motion-in-view .motion-image-window>img{will-change:transform}
+.motion-heading-line{display:block;transform:translate3d(calc(var(--chapter-flight,0)*-32px),calc(var(--chapter-flight,0)*22px),0)}
+.motion-heading-line:nth-child(2){transform:translate3d(calc(var(--chapter-flight,0)*32px),calc(var(--chapter-flight,0)*35px),0)}
+.story-heading .story-intro,.learning-heading .story-intro,.spaces-invitation,.life-heading>.story-intro,.technical-lead .story-intro{transform:translate3d(0,calc(var(--chapter-flight,0)*38px),0)}
+.cinematic-copy{transform:translate3d(0,var(--hero-exit,0px),0)}
+/* Formation: architectural depth, an opposed annotation and open reading lines. */
+.choreography-ready .formation-portrait{transform:translate3d(0,calc(var(--portrait-flight,0px) + var(--portrait-depth,0px)*.45),0)}
+.formation-portrait .motion-image-window{height:100%;border-radius:220px 220px 0 0}
+.formation-portrait .motion-image-window img{transform:translate3d(0,calc(var(--portrait-depth,0px)*.5),0) scale(var(--portrait-scale,1));border-radius:0}
+.formation-portrait figcaption{transform:translate3d(0,var(--portrait-counter,0px),0)}
+.formation-values article{position:relative;border-bottom-color:transparent}
+.formation-values article::after{content:'';position:absolute;left:0;bottom:0;right:0;height:1px;background:linear-gradient(90deg,#00b2e0,#dce7f3);transform:scaleX(var(--value-read,1));transform-origin:left}
+.formation-values h3{transform:translate3d(var(--value-flight,0px),0,0)}
+.formation-values .value-index{transform:translate3d(calc(var(--value-flight,0px)*-.5),0,0)}
+.formation-closing{transform:translate3d(0,calc(var(--closing-flight,0px)*.45),0)}
+.formation-closing>span{display:inline-block;transform:translate3d(var(--closing-flight,0px),0,0)}
+/* The existing five compositions each get their own photographic passage. */
+.learning-photo .motion-image-window img{transform:translate3d(0,calc(var(--stage-depth,0px)*.35),0) scale(var(--stage-scale,1));border-radius:0}
+.learning-copy h3{transform:translate3d(0,var(--stage-copy,0px),0)}
+.learning-number{transform:translate3d(calc(var(--stage-copy,0px)*-.6),0,0)}
+.learning-infantil .motion-image-window{border-radius:50% 50% 3px 3px;clip-path:inset(0 0 var(--stage-mask,0%) 0 round 50% 50% 3px 3px)}
+.choreography-ready .learning-infantil .learning-photo{transform:translate3d(0,var(--stage-flight,0px),0)}
+.learning-fundamental .motion-image-window{border-radius:3px;clip-path:inset(0 var(--stage-mask,0%) 0 0)}
+.choreography-ready .learning-fundamental .learning-photo{transform:translate3d(calc(var(--stage-flight,0px)*-.5),0,0)}
+.learning-fundamental .motion-image-window img{transform:translate3d(calc(var(--stage-depth,0px)*-.5),0,0) scale(var(--stage-scale,1))}
+.learning-fundamental-ii .motion-image-window{border-radius:3px;clip-path:inset(0 var(--stage-mask,0%) 0 var(--stage-mask,0%))}
+.choreography-ready .learning-fundamental-ii .learning-photo{transform:translate3d(calc(var(--stage-flight,0px)*.65),calc(var(--stage-flight,0px)*.4),0)}
+.learning-medio .motion-image-window{border-radius:3px 180px 3px 3px}
+.choreography-ready .learning-medio .learning-photo{transform:translate3d(0,calc(var(--stage-flight,0px)*-.65),0)}
+.learning-medio .motion-image-window img{transform:translate3d(calc(var(--stage-depth,0px)*.5),0,0) scale(var(--stage-scale,1))}
+.learning-tecnica .motion-image-window{border-radius:3px 3px 140px 3px;clip-path:inset(var(--stage-mask,0%) 0 0 0)}
+.choreography-ready .learning-tecnica .learning-photo{transform:translate3d(calc(var(--stage-flight,0px)*.4),var(--stage-flight,0px),0)}
+/* Campus keeps the chosen environment. Scroll moves its framing, never its controls. */
+.spaces-photo .motion-image-window{height:100%;transform:translate3d(0,calc(var(--campus-depth,0px)*.5),0) scale(1.1)}
+.spaces-panel figcaption>div{transform:translate3d(var(--campus-caption,0px),0,0)}
+.spaces-panel figcaption>p{transform:translate3d(0,calc(var(--campus-caption,0px)*.6),0)}
+/* Life: opposed image layers and word progression inside the existing diptych. */
+.life-mural .motion-image-window{height:calc(100% - 32px)}
+.life-mural .motion-image-window img{height:100%;transform:translate3d(0,var(--life-depth,0px),0) scale(1.09)}
+.life-music .motion-image-window img{transform:translate3d(0,calc(var(--life-depth,0px)*-1),0) scale(1.09)}
+.life-word{display:inline-block;transform:translate3d(0,0,0)}
+.life-word-1{color:#507ba7;transform:translate3d(0,var(--life-word-one,0px),0)}
+.life-word-2{transform:translate3d(0,var(--life-word-two,0px),0)}
+.life-side>p:not(.story-label){transform:translate3d(var(--life-side-shift,0px),0,0)}
+/* Technical: continuous reading rail and laboratory counter-framing. */
+.technical-courses{position:relative}
+.technical-courses::before{content:'';position:absolute;left:-1px;top:0;bottom:0;width:2px;background:#00b2e0;transform:scaleY(var(--technical-read,1));transform-origin:top}
+.technical-row h3{transform:translate3d(var(--course-flight,0px),0,0)}
+.technical-number{transform:translate3d(calc(var(--course-flight,0px)*-.45),0,0)}
+.technical-lab .motion-image-window{border-radius:0}
+.technical-lab .motion-image-window img{transform:translate3d(var(--technical-depth,0px),0,0) scale(1.085)}
+.technical-guide-line i{transform:scaleX(var(--technical-read,1))}
+/* Visit settles toward the direct action; inputs and action never travel. */
+.visit-main>.story-intro{transform:translate3d(0,calc(var(--chapter-flight,0)*24px),0)}
+.visit-architecture .motion-image-window{clip-path:inset(var(--visit-flight,0px) 0 var(--visit-flight,0px) 0)}
+.visit-architecture .motion-image-window img{transform:translate3d(0,calc(var(--visit-depth,0px)*.45),0) scale(1.09)}
+.visit-channels{position:relative;border-top-color:transparent}
+.visit-channels::before{content:'';position:absolute;left:0;right:0;top:0;height:1px;background:#00b2e0;transform:scaleX(var(--visit-rule,1));transform-origin:left}
+.story-footer-name>p{transform:translate3d(0,var(--footer-flight,0px),0)}
+@media(max-width:800px){.motion-heading-line{transform:translate3d(calc(var(--chapter-flight,0)*-18px),calc(var(--chapter-flight,0)*18px),0)}.motion-heading-line:nth-child(2){transform:translate3d(calc(var(--chapter-flight,0)*18px),calc(var(--chapter-flight,0)*25px),0)}.life-mural .motion-image-window img{transform:translate3d(0,var(--life-depth,0px),0) scale(1.075)}.life-music .motion-image-window img{transform:translate3d(0,calc(var(--life-depth,0px)*-1),0) scale(1.075)}}
+@media(max-width:600px){.learning-medio .motion-image-window{border-radius:3px 100px 3px 3px}.learning-tecnica .motion-image-window{border-radius:3px 3px 85px 3px}.formation-closing>span{display:block}}
+@media(max-height:520px){.life-mural .motion-image-window{height:auto}.life-mural .motion-image-window img{height:auto}}
+html:not(.js-ready) .formation-values article{border-bottom-color:#dce7f3}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.choreography-ready .motion-image-window,.choreography-ready .motion-image-window img,.choreography-ready [data-story-media],.choreography-ready .motion-heading-line,.choreography-ready .story-intro,.choreography-ready .spaces-invitation,.choreography-ready .formation-portrait,.choreography-ready .formation-portrait figcaption,.choreography-ready .formation-values h3,.choreography-ready .value-index,.choreography-ready .formation-closing,.choreography-ready .formation-closing>span,.choreography-ready .learning-copy h3,.choreography-ready .learning-number,.choreography-ready .spaces-panel figcaption>div,.choreography-ready .spaces-panel figcaption>p,.choreography-ready .life-word,.choreography-ready .life-side>p,.choreography-ready .technical-row h3,.choreography-ready .technical-number,.choreography-ready .story-footer-name>p,.choreography-ready .cinematic-copy{transform:none!important;clip-path:none!important;will-change:auto}.formation-values article::after,.technical-courses::before,.visit-channels::before{transform:none!important}}
